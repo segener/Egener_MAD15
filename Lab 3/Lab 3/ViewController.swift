@@ -33,7 +33,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //priceThen.text=currencyFormatter.stringFromNumber(price1)
         //priceNow.text=currencyFormatter.stringFromNumber(price2)
     
-    priceElasticity.text = String(stringInterpolationSegment: elasticity)
+        priceElasticity.text = String(stringInterpolationSegment: elasticity)
+    
+        let alert = UIAlertView()
+        alert.title = "Hey!"
+        alert.message = "Thanks for your input!"
+        alert.addButtonWithTitle("You're welcome")
+        alert.show()
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
