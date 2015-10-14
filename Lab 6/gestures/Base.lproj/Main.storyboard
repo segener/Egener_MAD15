@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space" translatesAutoresizingMaskIntoConstraints="NO" id="I5t-1D-SV3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="9PX-6L-FrY"/>
+                                    <constraint firstAttribute="width" constant="600" id="9XD-s0-XQX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yoga" translatesAutoresizingMaskIntoConstraints="NO" id="Snu-S9-Fdj">
+                                <rect key="frame" x="67" y="162" width="171" height="180"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mpa-Uc-m5Z" appends="YES" id="va6-Bx-tk5"/>
+                                    <outletCollection property="gestureRecognizers" destination="lWg-wf-vSM" appends="YES" id="hVq-iN-Pr2"/>
+                                    <outletCollection property="gestureRecognizers" destination="noh-qa-une" appends="YES" id="YdD-Jz-Mqv"/>
+                                    <outletCollection property="gestureRecognizers" destination="Wuj-Y9-rLo" appends="YES" id="BRR-13-KMI"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I5t-1D-SV3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="8RE-La-pew"/>
+                            <constraint firstAttribute="trailing" secondItem="I5t-1D-SV3" secondAttribute="trailing" id="Dgp-Qi-0AI"/>
+                            <constraint firstItem="I5t-1D-SV3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="EyL-Bo-Ohm"/>
+                            <constraint firstItem="I5t-1D-SV3" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="h9Z-9T-O8h"/>
+                            <constraint firstItem="I5t-1D-SV3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="yTB-lk-unZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mpa-Uc-m5Z">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="rlk-Ue-wnr"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="7cD-C2-w06"/>
+                    </connections>
+                </panGestureRecognizer>
+                <rotationGestureRecognizer id="lWg-wf-vSM">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="80X-yo-On0"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="UXO-SN-ola"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pinchGestureRecognizer id="noh-qa-une">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="1Hg-7I-P2v"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="yhw-t0-WVU"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Wuj-Y9-rLo">
+                    <connections>
+                        <action selector="handleLongPress:" destination="vXZ-lx-hvc" id="ADS-WQ-qqA"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="SZb-1y-KYQ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="298" y="395"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="space" width="426" height="240"/>
+        <image name="yoga" width="199" height="264"/>
+    </resources>
+</document>
