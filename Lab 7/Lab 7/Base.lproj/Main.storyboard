@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notes" translatesAutoresizingMaskIntoConstraints="NO" id="mHt-c7-pZA">
+                                <rect key="frame" x="-36" y="246" width="410" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="410" id="kQa-0k-Jmy">
+                                        <variation key="heightClass=compact" constant="644"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="354" id="w3x-5p-9lJ">
+                                        <variation key="heightClass=compact" constant="327"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3K-Av-IA7">
+                                <rect key="frame" x="145" y="104" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="4m9-de-7md"/>
+                                    <constraint firstAttribute="height" constant="30" id="IxH-JQ-Wtg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt5-Sh-P90"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-37-whY">
+                                <rect key="frame" x="124" y="49" width="122" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="78G-mc-RVH"/>
+                                    <constraint firstAttribute="height" constant="30" id="f2g-Mx-csc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LN6-iy-7V4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-AJ-Lux">
+                                <rect key="frame" x="152" y="158" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="MoQ-hG-8Je"/>
+                                    <constraint firstAttribute="height" constant="30" id="UNt-L8-GTj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="si3-wv-Vth"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mHt-c7-pZA" secondAttribute="bottom" id="60q-hz-6g0"/>
+                            <constraint firstItem="mHt-c7-pZA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-52" id="BaW-f8-pRP"/>
+                            <constraint firstItem="ohO-AJ-Lux" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="136" id="Gnp-bO-g5g"/>
+                            <constraint firstItem="cgF-37-whY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="HrW-ZN-aeT">
+                                <variation key="heightClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="C3K-Av-IA7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="104" id="NUC-SK-yX4">
+                                <variation key="heightClass=compact" constant="73"/>
+                            </constraint>
+                            <constraint firstItem="cgF-37-whY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="108" id="Oyg-Zf-gUX"/>
+                            <constraint firstItem="ohO-AJ-Lux" firstAttribute="top" secondItem="C3K-Av-IA7" secondAttribute="bottom" constant="24" id="e98-4j-Fzo">
+                                <variation key="heightClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="C3K-Av-IA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="129" id="zo4-ii-zfX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="ohO-AJ-Lux" id="O62-bJ-4ys"/>
+                        <outlet property="recordButton" destination="cgF-37-whY" id="zWj-5O-Tvz"/>
+                        <outlet property="stopButton" destination="C3K-Av-IA7" id="GwF-oL-gRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notes" width="640" height="400"/>
+    </resources>
+</document>
