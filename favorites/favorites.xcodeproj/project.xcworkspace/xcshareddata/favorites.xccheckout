@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0412BE10-7597-459C-AADB-F46CC30E0887</string>
+	<key>IDESourceControlProjectName</key>
+	<string>favorites</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>20E2E844063289A1C1639541273B6368BC0F1FA2</key>
+		<string>https://github.com/segener/Egener_MAD15.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>favorites/favorites.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>20E2E844063289A1C1639541273B6368BC0F1FA2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/segener/Egener_MAD15.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>20E2E844063289A1C1639541273B6368BC0F1FA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>20E2E844063289A1C1639541273B6368BC0F1FA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Egener_MAD15</string>
+		</dict>
+	</array>
+</dict>
+</plist>
