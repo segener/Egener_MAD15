@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Destination</string>
+    <string name="heading">How are you feeling?</string>
+    <string name="mood_button">Destination</string>
+    <string name="feeling"></string>
+    <string-array name="moods">
+        <item>busy</item>
+        <item>relaxed</item>
+        <item>adventurous</item>
+    </string-array>
+    <string name="mood_image">Mood Image</string>
+    <string name="name_edit">Name</string>
+    <string name="toggle_on">positive</string>
+    <string name="toggle_off">negative</string>
+    <string name="yoga_text">Preference</string>
+    <string name="yoga1_radio">Beach</string>
+    <string name="yoga2_radio">Buildings</string>
+    <string name="yoga3_radio">Mountains</string>
+    <string name="enlightened_check">swimmer</string>
+    <string name="conservative_check">partier</string>
+    <string name="flexible_check">climber</string>
+    <string name="secretive_check">worker</string>
+    <string name="meditate_switch">Meditate</string>
+</resources>
