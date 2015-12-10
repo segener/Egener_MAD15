@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pizza</string>
+    <string name="title">Pizzería Buscador</string>
+    <string name="coffee_type">Cambiar la multitud</string>
+    <string name="button">Encuentra Pizza</string>
+    <string-array name="crowd">
+        <item>margarita</item>
+        <item>blanco</item>
+        <item>inconformista</item>
+        <item>carne</item>
+        <item>4 queso</item>
+        <item>todo</item>
+    </string-array>
+    <string name="suggested_coffee">Esta es su pizzería sugerido</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pizza</string>
+    <string name="title">Pizza Shop Finder</string>
+    <string name="coffee_type">Choose your type</string>
+    <string name="sentence_button">Sentence</string>
+    <string name="button">Find Pizza Shop</string>
+    <string-array name="crowd">
+        <item>margarita</item>
+        <item>white</item>
+        <item>meat</item>
+        <item>veggie</item>
+        <item>4 cheese</item>
+        <item>everything</item>
+    </string-array>
+    <string name="suggested_coffee">This is your suggested pizza shop</string>
+    <string name="name_textView">Name</string>
+</resources>
