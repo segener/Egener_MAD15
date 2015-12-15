@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Project 3</string>
+    <string name="purchase">Find Purchase</string>
+    <string name="tree">Tree Image</string>
+    <string name="lights">Lights Image</string>
+    <string name="wrapping">Wrapping Image</string>
+    <string name="recycle">Recycle Image</string>
+    <string name="border1">Border Image</string>
+    <string name="border2">Border Image 2</string>
+    <string name="kermit_burned">Kermit</string>
+
+    <string name="purchase_text">Purchase Text</string>
+    <string name="tree_text">Tree Text</string>
+    <string name="lighting_text">Lighting Text</string>
+    <string name="wrapping_text">Wrapping Text</string>
+    <string name="recycle_text">Recycle Text</string>
+
+
+</resources>
